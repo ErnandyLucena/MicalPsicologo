@@ -8,11 +8,11 @@
   }
   
   .nav {
-    height: 50px;
+    height: 80px;
     width: 100%;
     background-color: #ffffff;
     position: relative;
-    border-bottom: 1px solid #23a7ff;
+    border-bottom: 1px solid #3e5cab;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +32,7 @@
   
   .nav-links a {
     text-decoration: none;
-    color: #1a8fdd;
+    color: #3e5cab;
     font-size: 16px;
     padding: 7px 20px;
     position: relative;
@@ -77,60 +77,310 @@
   .header {
     display: flex;
     justify-content: center;
-    margin: 60px;
+    margin: 0px;
+    height: 100vh;
+    align-items: center;
   }
+  
 
   .content-header {
-    width: 60%;
+    width: 50%;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+
   }
 
-  .image-header {
-    width: 40%;
+  .content-text h1 {
+   font-size: 60px;
+   color: #203f8b;
+   width: 80%;
+   line-height: 60px;
+
   }
+
+  .content-text p {
+    font-size: 30px;
+    line-height: 40px;
+    width: 70%;
+    margin-top: 30px;
+    color: #6178b3;
+   }
+
+   
+
+  .image-header {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .image-header img {
+    position: relative; /* Altere para 'absolute' se necessário */
+  width: 150%;
+  left: -300px; /* Move 50px para a esquerda */
+  }
+
+  .content-button button {
+    margin-top: 30px;
+    background-color: #3e5cab; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    border: none; /* Remove borda padrão */
+    border-radius: 30px; /* Deixa as bordas arredondadas */
+    padding: 15px 40px; /* Tamanho interno do botão */
+    cursor: pointer; /* Cursor de mãozinha */
+    transition: all 0.3s ease; /* Transição suave para os efeitos */
+    box-shadow: 0 5px 15px rgba(35, 167, 255, 0.4); /* Adiciona sombra */
+  }
+  
+  .content-button button:hover {
+    background-color: #1a8fdd; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(26, 143, 221, 0.6); /* Aumenta a sombra */
+    transform: scale(1.05); /* Faz o botão crescer levemente */
+  }
+  
+  .content-button button:active {
+    transform: scale(0.95); /* Reduz o tamanho quando clicado */
+    box-shadow: 0 4px 10px rgba(26, 143, 221, 0.6); /* Reduz a sombra */
+  }
+  
 
   .about {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 700px;
   }
 
   .about1-background1 {
-    background-color: rgb(211, 192, 166);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aea89d;
+    background-image: url('efeito-linhas.png');
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem no container */
     width: 50%;
-  }
+}
+
+.about1-content {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  color: white;
+}
+
+.about1-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.about1-text img {
+   width: 345px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+   margin-left: 30px;
+}
+
+.about1-text h1 {
+  font-size: 55px;
+  text-align: center;
+  line-height: 55px;
+  margin-bottom: 20px;
+ 
+}
+
+.about1-text P {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
   .about1-background2 {
-    background-color: rgb(0, 87, 250);
+    background-color: #3e5cab;
     width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 
   .about2 {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 700px;
   }
 
   .about2-background1 {
-    background-color: rgb(0, 197, 99);
+    background-color: #5a8f76;
     width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
   .about2-background2 {
-    background-color: rgb(211, 192, 166);
+    background-color: #aea89d;
     width: 50%;
+    display: flex;
+    background-image: url('efeito-linhas.png');
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem no container */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about2-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+  }
+
+  .about2-image img {
+     width: 55px;
+  }
+
+  .about2-text h1 {
+    font-size: 40px;
+    line-height: 40px;
+   
+  }
+
+  .about2-text P {
+    font-size: 20px;
+    margin-top: -10px;
   }
 
   .about3 {
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 700px;
   }
 
   .about3-background1 {
-    background-color: rgb(211, 192, 166);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aea89d;
+    background-image: url('efeito-linhas.png');
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem no container */
     width: 50%;
+    
   }
   .about3-background2 {
-    background-color: rgb(0, 87, 250);
+    background-color: #3e5cab;
     width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .about3-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+  }
+
+  .about3-image img {
+     width: 55px;
+  }
+
+  .about3-text h1 {
+    font-size: 40px;
+    line-height: 40px;
+   
+  }
+
+  .about3-text P {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+
+  .profile {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+  }
+
+  .profile-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .profile-text p {
+    margin-top: -30px;
+    font-size: 20px;
+    width: 50%;
+    color: #333;
+  }
+
+  .profile-about {
+    font-size: 20px;
+    color: #33333396;
+    margin-bottom: -10px;
+  }
+
+  .profile-crp {
+    font-size: 15px;
+    color: #333;
+  }
+
+  .profile-text h1 {
+    font-size: 40px;
+    color: #5a8f76;
+  }
+
+  .profile-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-image img {
+    width: 50%;
+  }
+
+  .profile-btn  {
+    margin-top: 30px;
+    background-color: #5a8f76; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    width: 25%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold; /* Texto em negrito */
+    border: none; /* Remove borda padrão */
+    border-radius: 30px; /* Deixa as bordas arredondadas */
+    padding: 15px 40px; /* Tamanho interno do botão */
+    cursor: pointer; /* Cursor de mãozinha */
+    transition: all 0.3s ease; /* Transição suave para os efeitos */
+    box-shadow: 0 5px 15px rgba(1, 97, 49, 0.4); /* Adiciona sombra */
+  }
+  
+  .profile-btn:hover {
+    background-color: #5a8f76; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(2, 66, 29, 0.6); /* Aumenta a sombra */
+    transform: scale(1.05); /* Faz o botão crescer levemente */
+  }
+  
+  .profile-btn:active  {
+    transform: scale(0.95); /* Reduz o tamanho quando clicado */
+    box-shadow: 0 4px 10px rgba(2, 83, 36, 0.6); /* Reduz a sombra */
   }
   
   @media (max-width: 600px) {
