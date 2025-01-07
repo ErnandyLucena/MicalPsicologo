@@ -473,15 +473,16 @@
 
   .contact-form {
     
-    margin: 120px auto;
+    margin: 100px auto;
     z-index: 100;
     position: relative;
     align-items: center;
-    padding: 40px;
-    height: 80vh;
-    width: 90%;
-    max-width: 600px;
-    background: linear-gradient(135deg, #f0f4f8, #ffffff);
+    padding: 80px;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+    max-width: 700px;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -498,7 +499,7 @@
 .contact-form-header p {
     font-size: 1rem;
     color: #718096;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 .contact-form .form-group {
