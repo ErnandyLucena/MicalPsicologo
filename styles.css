@@ -899,6 +899,14 @@ left: -300px; /* Move 50px para a esquerda */
         margin-top: 100px;
         margin-bottom: 100px;
       }
+
+      .about3-background1 img {
+        width: 70%;
+      }
+
+      .about2-background2 img {
+        width: 75%;
+      }
       
 
      
@@ -976,6 +984,8 @@ left: -300px; /* Move 50px para a esquerda */
   .about1-text img, .about2-image img, .about3-image img {
     max-width: 150px; /* Imagens maiores em telas médias */
   }
+
+
 }
 
 /* Ajustes para telas muito grandes */
