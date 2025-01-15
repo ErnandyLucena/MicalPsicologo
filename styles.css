@@ -636,15 +636,215 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
+  .therapy-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 120px;
     
+  }
+  
+
+  .therapy-efects2 {
+    display: f;
+  }
+
+  .therapy {
+    height: min-content;
+    padding: 20px;
+  }
+
+  .therapy-cards {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    background: #5a8f76;
+    border: solid 1px #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.301);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .therapy-card-text h1 {
+      font-size: 20px;
+  }
+  .therapy-card-text p {
+    font-size: 15px;
+}
+
+.therapy-efects {
+  position: absolute;
+  top: -35px;
+  transform: translateX(-30%);
+}
+
+.therapy-efects2 {
+  position: absolute;
+  width: 10%;
+  top: 950px;
+  transform: translateX(-220%);
+
+}
+
+.form-container {
+  z-index: 50;
+}
+
+.nav {
+  height: 40px;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  border-bottom: 1px solid #3e5cab;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 22px;
+  color: #23a7ff;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #3e5cab;
+  font-size: 16px;
+  padding: 7px 20px;
+  position: relative;
+  overflow: hidden; /* Garante que o fundo não ultrapasse o link */
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  align-items: center;
+  background-color: #006aa818; 
+  transition: transform 0.3s ease; 
+  transform: scaleX(0); 
+  transform-origin: bottom right; 
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1); /* Expande o fundo para o tamanho total */
+  transform-origin: bottom left; /* A expansão vai da parte inferior esquerda */
+}
+
+.nav-links a:hover {
+  color: #001d38; /* Muda a cor do texto ao passar o mouse */
+}
+
+.nav-btn img {
+  display: none;
+  width: 25px;
+  cursor: pointer;
+}
+
+#nav-check {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  height: 100vh;
+  align-items: center;
+}
+
+
+.content-header {
+  width: 50%;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -30%;
+
+}
+
+.content-text h1 {
+ font-size: 40px;
+ color: #203f8b;
+ width: 80%;
+ line-height: 40px;
+
+}
+
+.content-text p {
+  font-size: 20px;
+  line-height: 25px;
+  width: 90%;
+  margin-top: -10px;
+  color: #6178b3;
+ }
+
+ 
+
+.image-header {
+  width: 50%;
+  overflow: hidden;
+}
+
+.image-header img {
+  position: relative; /* Altere para 'absolute' se necessário */
+width: 150%;
+left: -300px; /* Move 50px para a esquerda */
+}
+
+.content-button button {
+  margin-top: 30px;
+  background-color: #3e5cab; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto */
+  font-size: 15px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  border: none; /* Remove borda padrão */
+  border-radius: 30px; /* Deixa as bordas arredondadas */
+  padding: 10px 35px; /* Tamanho interno do botão */
+  cursor: pointer; /* Cursor de mãozinha */
+  transition: all 0.3s ease; /* Transição suave para os efeitos */
+  box-shadow: 0 5px 15px rgba(35, 167, 255, 0.4); /* Adiciona sombra */
+}
+
+.content-button button:hover {
+  background-color: #1a8fdd; /* Muda a cor de fundo ao passar o mouse */
+  box-shadow: 0 8px 20px rgba(26, 143, 221, 0.6); /* Aumenta a sombra */
+  transform: scale(1.05); /* Faz o botão crescer levemente */
+}
+
+.content-button button:active {
+  transform: scale(0.95); /* Reduz o tamanho quando clicado */
+  box-shadow: 0 4px 10px rgba(26, 143, 221, 0.6); /* Reduz a sombra */
+}
+
+
+
+
 }
 
 
   
   
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .nav-links {
       position: absolute;
       top: 50px;
@@ -691,5 +891,108 @@
       align-items: center; /* Ensures vertical alignment */
       justify-content: center; /* Ensures horizontal centering */
     }
+
+    @media (max-width: 868px) {
+     
+      .about1-background1 img {
+        width: 70%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      
+
+     
   }
+
   
+    
+  }
+
+  /* Estilo base (mobile-first) */
+.about, .about2, .about3 {
+  display: flex;
+  flex-direction: column; /* Empilha os cards por padrão */
+  width: 100%;
+  height: auto; /* Altura automática para adaptar ao conteúdo */
+  
+}
+
+.about1-background1, .about1-background2,
+.about2-background1, .about2-background2,
+.about3-background1, .about3-background2 {
+  width: 100%; /* Cada bloco ocupa 100% em telas pequenas */
+  height: auto; /* Adapta a altura ao conteúdo */
+  padding: 1rem; /* Espaçamento interno */
+  text-align: center; /* Centraliza conteúdo em telas pequenas */
+}
+
+.about1-content, .about2-content, .about3-content {
+  margin: 0 auto; /* Centraliza conteúdo */
+  max-width: 800px; /* Limita a largura do texto */
+}
+
+.about1-text h1, .about2-text h1, .about3-text h1 {
+  font-size: 1.5rem; /* Tamanho de fonte para mobile */
+  margin-bottom: 1rem;
+}
+
+.about1-text p, .about2-text p, .about3-text p {
+  font-size: 1rem; /* Texto menor para dispositivos menores */
+  line-height: 1.5;
+}
+
+.about1-text img, .about2-image img, .about3-image img {
+  max-width: 100px; /* Limita o tamanho das imagens */
+  margin: 1rem auto;
+}
+
+/* Ajustes para telas maiores */
+@media (min-width: 768px) {
+  .about, .about2, .about3 {
+    flex-direction: row; /* Cards lado a lado em telas médias */
+    height: 700px; /* Define altura padrão */
+  }
+
+  .about1-background1, .about1-background2,
+  .about2-background1, .about2-background2,
+  .about3-background1, .about3-background2 {
+    width: 50%; /* Cada bloco ocupa metade da largura */
+    height: 100%; /* Preenche a altura da seção */
+    padding: 2rem;
+  }
+
+  .about1-content, .about2-content, .about3-content {
+    max-width: 50%; /* Limita o texto a 50% */
+  }
+
+  .about1-text h1, .about2-text h1, .about3-text h1 {
+    font-size: 2rem; /* Tamanho maior para títulos */
+  }
+
+  .about1-text p, .about2-text p, .about3-text p {
+    font-size: 1.125rem; /* Texto maior em telas médias */
+  }
+
+  .about1-text img, .about2-image img, .about3-image img {
+    max-width: 150px; /* Imagens maiores em telas médias */
+  }
+}
+
+/* Ajustes para telas muito grandes */
+@media (min-width: 1024px) {
+  .about1-text h1, .about2-text h1, .about3-text h1 {
+    font-size: 2.5rem; /* Títulos ainda maiores */
+  }
+
+  .about1-text p, .about2-text p, .about3-text p {
+    font-size: 1.25rem; /* Texto ajustado */
+  }
+
+  .about1-text img, .about2-image img, .about3-image img {
+    max-width: 200px; /* Imagens maiores */
+  }
+}
+  
+.about1-text p {
+  margin-right: 20px;
+}
