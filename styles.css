@@ -729,6 +729,11 @@
   transition: color 0.3s ease;
 }
 
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a8fdd; }
+
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -736,9 +741,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  border-radius: 0px;
   align-items: center;
-  background-color: #006aa818; 
+  background-color: #00a2ff17; 
   transition: transform 0.3s ease; 
   transform: scaleX(0); 
   transform-origin: bottom right; 
@@ -750,7 +755,7 @@
 }
 
 .nav-links a:hover {
-  color: #001d38; /* Muda a cor do texto ao passar o mouse */
+  color: #21aeff; /* Muda a cor do texto ao passar o mouse */
 }
 
 .nav-btn img {
@@ -908,6 +913,51 @@ left: -300px; /* Move 50px para a esquerda */
         width: 75%;
       }
       
+      .about1-text p {
+        margin-left: 0px;
+        font-size: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .about1-text h1 {
+        line-height: 35px;
+        font-size: 35px;
+        
+      }
+
+      .about2-text p {
+        margin-left: 0px;
+        font-size: 15px;
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .about2-text h1 {
+        line-height: 30px;
+        font-size: 25px;
+  
+      }
+
+      .about3-text p {
+        margin-left: 0px;
+        font-size: 15px;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .about3-text h1 {
+        line-height: 30px;
+        font-size: 25px;
+  
+      }
+      
 
      
   }
@@ -939,10 +989,6 @@ left: -300px; /* Move 50px para a esquerda */
   max-width: 800px; /* Limita a largura do texto */
 }
 
-.about1-text h1, .about2-text h1, .about3-text h1 {
-  font-size: 1.5rem; /* Tamanho de fonte para mobile */
-  margin-bottom: 1rem;
-}
 
 .about1-text p, .about2-text p, .about3-text p {
   font-size: 1rem; /* Texto menor para dispositivos menores */
@@ -973,9 +1019,7 @@ left: -300px; /* Move 50px para a esquerda */
     max-width: 50%; /* Limita o texto a 50% */
   }
 
-  .about1-text h1, .about2-text h1, .about3-text h1 {
-    font-size: 2rem; /* Tamanho maior para títulos */
-  }
+  
 
   .about1-text p, .about2-text p, .about3-text p {
     font-size: 1.125rem; /* Texto maior em telas médias */
@@ -1003,6 +1047,3 @@ left: -300px; /* Move 50px para a esquerda */
   }
 }
   
-.about1-text p {
-  margin-right: 20px;
-}
