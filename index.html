@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Micael Psicologo</title>
 </head>
 <body>
 <container>
@@ -56,7 +56,11 @@
         <div class="about1-background2">
             <div class="about1-content">
                 <div class="about1-text">
-                  <h1>Como Funciona?</h1>
+                    <!-- Ajustando o tamanho do ícone diretamente no HTML -->
+                    <img class="terapia-icon" src="terapia-icon.png" alt="" style="width: 150px; height: auto;">
+                    
+                    <h1>Como Funciona?</h1>
+                    
                     <img src="linha.png" alt="">
                     <p>Por meio de plataformas seguras, ofereço sessões individuais voltadas para jovens e adultos, com horários flexíveis e adaptados à sua rotina.</p>
                 </div>
@@ -122,9 +126,9 @@
                 <img src="ansiedade-icon.png" alt="">
             </div>
             <div class="therapy-card-text">
-              <h1>Te ajuda com
-                a ansiedade</h1>
-              <p>A psicologia ajuda na ansiedade através de terapias comportamentais e cognitivas, exposição a medos, mudança de pensamentos negativos e técnicas de relaxamento.</p>
+              <h1>Ansiedade</h1>
+              <p>A ansiedade se apresenta de forma única em cada pessoa. Na terapia,
+                você encontra acolhimento para entender suas angústias e desenvolver caminhos para lidar melhor com as inquietações.</p>
             </div>
           </div>
           <div class="therapy-cards">
@@ -132,9 +136,8 @@
               <img src="depressao-icon.png" alt="">
             </div>
             <div class="therapy-card-text">
-              <h1>Ansiedade</h1>
-              <p>A ansiedade se apresenta de forma única em cada pessoa. Na terapia,
-                 você encontra acolhimento para entender suas angústias e desenvolver caminhos para lidar melhor com as inquietações.
+              <h1>Depressão</h1>
+              <p>A terapia te oferece um espaço único para expressar seus sentimentos e compreender suas dores, respeitando sua história e ajudando você a ressignificar o que causa sofrimento.
 
               </p>
             </div>
@@ -157,29 +160,32 @@
                 <h1>Entre em Contato</h1>
                 <p>Preencha os campos abaixo para nos enviar uma mensagem.</p>
             </div>
-            <form class="form-container">
+            <form class="form-container" action="https://api.staticforms.xyz/submit" method="post">
                 <div class="form-group">
                     <label for="name">Nome</label>
                     <div class="input-wrapper">
                         <img src="user.png" alt="User Icon" class="input-icon">
-                        <input type="text" id="name" placeholder="Digite seu nome">
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="phone">Telefone</label>
                     <div class="input-wrapper">
                         <img src="telephone.png" alt="Telephone Icon" class="input-icon">
-                        <input type="tel" id="phone" placeholder="Digite seu telefone">
+                        <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <div class="input-wrapper">
                         <img src="email.png" alt="Email Icon" class="input-icon">
-                        <input type="email" id="email" placeholder="Digite seu email">
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
                     </div>
                 </div>
                 <button type="submit" class="btn-submit">Enviar</button>
+            
+                <!-- Chave de acesso do StaticForms -->
+                <input type="hidden" name="accessKey" value="da93d767-b050-4d07-b6ad-e4df0de0a003">
             </form>
         </div>
     </div>

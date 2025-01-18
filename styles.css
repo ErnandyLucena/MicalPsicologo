@@ -245,6 +245,7 @@
     align-items: center;
   }
 
+
   .about2 {
     display: flex;
     width: 100%;
@@ -883,10 +884,6 @@ left: -300px; /* Move 50px para a esquerda */
 
 }
 
-
-  
-  
-
   @media (max-width: 800px) {
     .nav-links {
       position: absolute;
@@ -936,6 +933,7 @@ left: -300px; /* Move 50px para a esquerda */
     }
 
     @media (max-width: 868px) {
+
 
       .nav {
         position: fixed;
@@ -1203,4 +1201,6 @@ left: -300px; /* Move 50px para a esquerda */
     max-width: 200px; /* Imagens maiores */
   }
 }
+
+
   
