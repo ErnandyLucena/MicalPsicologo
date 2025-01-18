@@ -1,24 +1,58 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
   body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
   }
-  
-  .nav {
-    height: 80px;
-    width: 100%;
-    background-color: #ffffff;
-    position: relative;
-    border-bottom: 1px solid #3e5cab;
+
+  .whatsapp-button {
+    position: fixed;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-  }
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #25D366; /* Cor de fundo */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    z-index: 1000; /* Mantém o botão acima de outros elementos */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.whatsapp-button img {
+  width: 32px;
+}
+
+/* Efeito de hover */
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+    transition: transform 0.3s ease;
+}
   
+.nav {
+  height: 80px;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed; /* Torna a navbar fixa */
+  top: 0; /* Fixa a navbar no topo da página */
+  left: 0; /* Garante que a navbar ocupe toda a largura */
+  border-bottom: 1px solid #3e5cab;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  z-index: 1000; /* Garante que a navbar fique sobre outros elementos */
+}
+
   .nav-header {
     display: flex;
     align-items: center;
@@ -637,6 +671,8 @@
 
 
 @media (max-width: 868px) {
+
+
   .therapy-content {
     display: flex;
     flex-direction: column;
@@ -707,6 +743,8 @@
   justify-content: space-between;
   padding: 0 10px;
 }
+
+
 
 .nav-header {
   display: flex;
@@ -898,6 +936,42 @@ left: -300px; /* Move 50px para a esquerda */
     }
 
     @media (max-width: 868px) {
+
+      .nav {
+        position: fixed;
+        top: 0; /* Fixa a navbar no topo da página */
+        left: 0;
+        padding: 25px 10px;
+      }
+
+      .image-header img {
+        display: none;
+      }
+
+      .content-button button {
+        margin-top: 30px;
+        background-color: #3e5cab; /* Cor de fundo do botão */
+        color: #fff; /* Cor do texto */
+        font-size: 17px; /* Tamanho da fonte */
+        font-weight: bold; /* Texto em negrito */
+        border: none; /* Remove borda padrão */
+        border-radius: 30px; /* Deixa as bordas arredondadas */
+        padding: 15px 30px; /* Tamanho interno do botão */
+        cursor: pointer; /* Cursor de mãozinha */
+        transition: all 0.3s ease; /* Transição suave para os efeitos */
+        box-shadow: 0 5px 15px rgba(35, 167, 255, 0.4); /* Adiciona sombra */
+      }
+      
+      .content-button button:hover {
+        background-color: #1a8fdd; /* Muda a cor de fundo ao passar o mouse */
+        box-shadow: 0 8px 20px rgba(26, 143, 221, 0.6); /* Aumenta a sombra */
+        transform: scale(1.05); /* Faz o botão crescer levemente */
+      }
+      
+      .content-button button:active {
+        transform: scale(0.95); /* Reduz o tamanho quando clicado */
+        box-shadow: 0 4px 10px rgba(26, 143, 221, 0.6); /* Reduz a sombra */
+      }
      
       .about1-background1 img {
         width: 70%;
@@ -924,6 +998,7 @@ left: -300px; /* Move 50px para a esquerda */
       .about1-text h1 {
         line-height: 35px;
         font-size: 35px;
+        margin-bottom: -10px;
         
       }
 
@@ -956,6 +1031,88 @@ left: -300px; /* Move 50px para a esquerda */
         line-height: 30px;
         font-size: 25px;
   
+      }
+
+      .profile {
+        display: flex;
+        height: min-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px;
+      }
+    
+      .profile-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+    
+      .profile-text p {
+        margin-top: -30px;
+        font-size: 20px;
+        width: 100%;
+        color: #333;
+      }
+    
+      .profile-about {
+        font-size: 20px;
+        color: #33333396;
+        margin-bottom: -5px;
+        margin-top: 30px;
+      }
+    
+      .profile-crp {
+        font-size: 15px;
+        color: #333;
+      }
+    
+      .profile-text h1 {
+        font-size: 40px;
+        color: #5a8f76;
+        line-height: 40px;
+        margin-bottom: 50px;
+      }
+    
+      .profile-image {
+        width: 90%;
+        display: flex;
+        justify-content: start;
+        margin-right: 50px;
+      }
+    
+      .profile-image img {
+        width: 50%;
+      }
+    
+      .profile-btn  {
+        margin-top: 30px;
+        background-color: #5a8f76; /* Cor de fundo do botão */
+        color: #fff; /* Cor do texto */
+        font-size: 18px; /* Tamanho da fonte */
+        width: 75%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-weight: bold; /* Texto em negrito */
+        border: none; /* Remove borda padrão */
+        border-radius: 30px; /* Deixa as bordas arredondadas */
+        padding: 15px 40px; /* Tamanho interno do botão */
+        cursor: pointer; /* Cursor de mãozinha */
+        transition: all 0.3s ease; /* Transição suave para os efeitos */
+        box-shadow: 0 5px 15px rgba(1, 97, 49, 0.4); /* Adiciona sombra */
+      }
+      
+      .profile-btn:hover {
+        background-color: #5a8f76; /* Muda a cor de fundo ao passar o mouse */
+        box-shadow: 0 8px 20px rgba(2, 66, 29, 0.6); /* Aumenta a sombra */
+        transform: scale(1.05); /* Faz o botão crescer levemente */
+      }
+      
+      .profile-btn:active  {
+        transform: scale(0.95); /* Reduz o tamanho quando clicado */
+        box-shadow: 0 4px 10px rgba(2, 83, 36, 0.6); /* Reduz a sombra */
       }
       
 

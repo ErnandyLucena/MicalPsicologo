@@ -8,6 +8,9 @@
 </head>
 <body>
 <container>
+    <a href="https://wa.me/SEU_NUMERO" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+        <img src="whatsapp-icon.png" alt="">
+    </a>
     <div class="nav">
         <!-- Checkbox control for toggling the nav -->
         <input type="checkbox" id="nav-check">
@@ -23,19 +26,19 @@
         </div>
         
         <!-- Links that will be shown/hidden -->
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Consultas</a>
-            <a href="#">Contato</a>
-            <a href="#">Agendar</a>
+        <div class="nav-links" >
+            <a href="#header">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#therapy">Consultas</a>
+            <a href="#contact-form">Contato</a>
+            <a href="#perfil">Perfil</a>
         </div>
     </div>
-    <div class="header">
+    <div class="header" id="header">
         <div class="content-header">
             <div class="content-text">
             <h1>Atendimento Psicologico Online</h1>
-            <p>dar o primeiro passo para cuidar da sua saúde mental é um ato de coragem</p>
+            <p>Dar o primeiro passo para cuidar da sua saúde mental é um ato de coragem</p>
             </div>
             <div class="content-button">
                 <button>Agende já</button>
@@ -78,7 +81,7 @@
             <img src="mulher-cell.png" alt="">
         </div>
     </div>
-    <div class="about3">
+    <div class="about3" id="about">
         <div class="about3-background1">
             <img src="mulher-call.png" alt="">
         </div>
@@ -94,7 +97,7 @@
             </div>
         </div>
     </div>
-    <div class="profile">
+    <div class="profile " id="perfil">
         <div class="profile-image">
           <img src="micael-profile.png" alt="">
         </div>
@@ -110,7 +113,7 @@
             </button>
         </div>
     </div>
-    <div class="therapy">
+    <div class="therapy" id="therapy">
         <div class="therapy-content">
             <div class="therapy-efects"><img src="blue-efeito01.png" alt=""></div>
             <div class="therapy-efects2"><img src="blue-efeito02.png" alt=""></div>
@@ -148,7 +151,7 @@
           </div>
         </div>
       </div>
-      <div class="contact-form">
+      <div class="contact-form" id="contact-form">
         <div class="contact-card">
             <div class="contact-form-header">
                 <h1>Entre em Contato</h1>
@@ -183,5 +186,19 @@
     
     
 </container>
+
+<script>
+    // Seleciona todos os links dentro da navegação
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const navCheck = document.getElementById('nav-check');
+
+    // Adiciona o evento de clique a cada link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Desmarca o checkbox para fechar o menu
+            navCheck.checked = false;
+        });
+    });
+</script>
 </body>
 </html>
