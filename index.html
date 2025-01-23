@@ -14,16 +14,19 @@
     <div class="nav">
         <!-- Checkbox control for toggling the nav -->
         <input type="checkbox" id="nav-check">
-        
+    
+        <!-- Logo do Micael -->
         <div class="nav-header">
+            <img src="micael-logo.png" alt="Logo Micael">
         </div>
-        
+    
         <!-- Icon button that toggles the checkbox -->
         <div class="nav-btn">
             <label for="nav-check">
                 <img src="menu.png" alt="Menu" />
             </label>
         </div>
+ 
         
         <!-- Links that will be shown/hidden -->
         <div class="nav-links" >
@@ -53,22 +56,23 @@
             <img src="videocall.png" alt="">
 
         </div>
-        <div class="about1-background2">
+        <div class="about1-background2" >
             <div class="about1-content">
                 <div class="about1-text">
                     <!-- Ajustando o tamanho do ícone diretamente no HTML -->
                     <img class="terapia-icon" src="terapia-icon.png" alt="" style="width: 150px; height: auto;">
                     
                     <h1>Como Funciona?</h1>
-                    
+                    <div class="linha-mod">
                     <img src="linha.png" alt="">
+                    </div>
                     <p>Por meio de plataformas seguras, ofereço sessões individuais voltadas para jovens e adultos, com horários flexíveis e adaptados à sua rotina.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="about2">
-        <div class="about2-background1">
+        <div class="about2-background1" id="background1">
             <div class="about2-content">
                 <div class="about2-image">
                     <img src="casa-icon.png" alt="">
@@ -83,6 +87,19 @@
         </div>
         <div class="about2-background2">
             <img src="mulher-cell.png" alt="">
+        </div>
+        <div class="about2-background1" id="background2">
+            <div class="about2-content">
+                <div class="about2-image">
+                    <img src="casa-icon.png" alt="">
+                </div>
+                <div class="about2-text">
+                  <h1>Comodidade
+                    e economia</h1>
+                    <p>Além de economizar tempo com o deslocamento, você também economiza custos extras, como transporte,
+                         estacionamento ou até mesmo hospedagem, caso precise viajar para a consulta.</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="about3" id="about">
@@ -223,6 +240,31 @@
             navCheck.checked = false;
         });
     });
+
+
+    // Função para alternar visibilidade com base no tamanho da tela
+function toggleBackgrounds() {
+  const background1 = document.getElementById("background1");
+  const background2 = document.getElementById("background2");
+
+  // Verifica o tamanho da tela
+  if (window.matchMedia("(max-width: 868px)").matches) {
+    // Tela pequena (mobile)
+    background1.style.display = "none";
+    background2.style.display = "block";
+  } else {
+    // Tela grande
+    background1.style.display = "flex";
+    background2.style.display = "none";
+  }
+}
+
+// Chama a função ao carregar a página
+toggleBackgrounds();
+
+// Adiciona um listener para ajustar ao redimensionar a janela
+window.addEventListener("resize", toggleBackgrounds);
+
 </script>
 </body>
 </html>

@@ -28,6 +28,7 @@
     text-decoration: none; /* Remove sublinhado */
 }
 
+
 .whatsapp-button img {
   width: 32px;
 }
@@ -57,6 +58,11 @@
     display: flex;
     align-items: center;
   }
+
+  .nav-header img {
+    width: 90px;
+    margin-left: 20px;
+  }
   
   .nav-title {
     font-size: 22px;
@@ -70,7 +76,7 @@
     font-size: 16px;
     padding: 7px 20px;
     position: relative;
-    overflow: hidden; /* Garante que o fundo não ultrapasse o link */
+    overflow: hidden; 
     transition: color 0.3s ease;
   }
   
@@ -215,6 +221,7 @@
 }
 
 
+
 .about1-text img {
    width: 345px;
    display: flex;
@@ -227,7 +234,7 @@
   font-size: 55px;
   text-align: center;
   line-height: 55px;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
  
 }
 
