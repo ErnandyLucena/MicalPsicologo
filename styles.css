@@ -103,6 +103,13 @@
   .nav-links a:hover {
     color: #ffffff; /* Muda a cor do texto ao passar o mouse */
   }
+
+  .nav-links a.active {
+    background-color: #f0f0f046; /* Altere para a cor desejada */
+    color: #ffffff; /* Altere para o texto da cor desejada */
+    font-weight: bold; /* Torna o texto em negrito */
+    border-radius: 50px; /* Adiciona um efeito arredondado */
+}
   
   .nav-btn img {
     display: none;
