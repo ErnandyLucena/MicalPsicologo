@@ -42,7 +42,9 @@
             <p>Dar o primeiro passo para cuidar da sua saúde mental é um ato de coragem</p>
             </div>
             <div class="content-button">
-                <button>Agende já</button>
+                <a href="https://wa.me/5533984195118" target="_blank" style="text-decoration: none;">
+                    <button>Agende já</button>
+                  </a>
             </div>
         </div>
         <div class="image-header">
@@ -127,9 +129,11 @@
                 <p>Atendimento online para adolescentes e adultos.</p>
             </div>
             <p class="profile-crp">Psicólogo Clínico  CRP-04/74923.</p>
-            <button class="profile-btn">
+            <a href="https://wa.me/5533984195118">
+            <button class="profile-btn"> 
                 WhatsApp
             </button>
+        </a>
         </div>
     </div>
     <div class="therapy" id="therapy">
@@ -184,47 +188,29 @@
                   title="Entre em Contato"
                 ></iframe>
               </div>
-              <script>
-                var d = document,
-                  w = "https://tally.so/widgets/embed.js",
-                  v = function () {
-                    "undefined" != typeof Tally
-                      ? Tally.loadEmbeds()
-                      : d
-                          .querySelectorAll("iframe[data-tally-src]:not([src])")
-                          .forEach(function (e) {
-                            e.src = e.dataset.tallySrc;
-                          });
-                  };
-                if ("undefined" != typeof Tally) v();
-                else if (d.querySelector('script[src="' + w + '"]') == null) {
-                  var s = d.createElement("script");
-                  s.src = w;
-                  s.onload = v;
-                  s.onerror = v;
-                  d.body.appendChild(s);
-                }
-              </script>
         </div>
     </div>
 
+  
     <footer>
         <div class="footer-container">
-          
-          <div class="footer-links">
-            <a class="instagram" href="https://instagram.com/seu_perfil" target="_blank">
-              <img src="instagram-icon.png" alt="Instagram"> Instagram
-            </a>
-            <a class="WhatsApp" href="https://wa.me/5533984195118" target="_blank">
-              <img src="whatsapp-icon.png" alt="WhatsApp"> WhatsApp
-            </a>
+          <!-- Texto do footer -->
+          <div class="footer-text">
+            &copy; 2025 Micael Psicologo. Todos os direitos reservados.
           </div>
-          <div class="footer-logo">
-            <p>MicaelPsicólogo.com.br All Rights Reserved.</p>
+          <!-- Botões de redes sociais -->
+          <div class="social-buttons">
+            <a href="https://www.instagram.com/micael.saturnino/" target="_blank">
+                <i><img src="instagram-icon2.png" alt=""></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://wa.me/5533984195118"" target="_blank">
+              <i><img src="whatsapp-icon.png" alt=""></i>
+              <span>WhatsApp</span>
+            </a>
           </div>
         </div>
       </footer>
-      
     
     
 </container>
@@ -293,8 +279,26 @@ toggleBackgrounds();
 // Adiciona um listener para ajustar ao redimensionar a janela
 window.addEventListener("resize", toggleBackgrounds);
 
+                var d = document,
+                  w = "https://tally.so/widgets/embed.js",
+                  v = function () {
+                    "undefined" != typeof Tally
+                      ? Tally.loadEmbeds()
+                      : d
+                          .querySelectorAll("iframe[data-tally-src]:not([src])")
+                          .forEach(function (e) {
+                            e.src = e.dataset.tallySrc;
+                          });
+                  };
+                if ("undefined" != typeof Tally) v();
+                else if (d.querySelector('script[src="' + w + '"]') == null) {
+                  var s = d.createElement("script");
+                  s.src = w;
+                  s.onload = v;
+                  s.onerror = v;
+                  d.body.appendChild(s);
+                }
+              </script>
 
-
-</script>
 </body>
 </html>
